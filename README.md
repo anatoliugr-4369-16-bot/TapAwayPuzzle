@@ -10,14 +10,15 @@ Click a cube to launch it — only if its path in the arrow direction is complet
 
 ## File Structure
 
-| File            | Responsibility                                              |
-| --------------- | ----------------------------------------------------------- |
-| `main.py`       | Window, game loop, 2D HUD overlay                           |
-| `renderer.py`   | All OpenGL — uses transform.py matrices via `glLoadMatrixf` |
-| `cube.py`       | Cube entity, animation, blocked-flash state                 |
-| `grid.py`       | 3D occupancy, outer-shell generation, path-clear check      |
-| `game_state.py` | Tap logic, win detection, score                             |
-| `transform.py`  | Matrix library: rotation, translation, ortho projection     |
+| File              | Responsibility                                                |
+| ----------------- | ------------------------------------------------------------- |
+| `main.py`         | Window, game loop, 2D HUD overlay                             |
+| `renderer.py`     | All OpenGL — uses transform.py matrices via `glLoadMatrixf`   |
+| `cube.py`         | Cube entity, animation, blocked-flash state                   |
+| `grid.py`         | 3D occupancy, outer-shell generation, path-clear check        |
+| `game_state.py`   | Tap logic, win detection, score                               |
+| `transform.py`    | Matrix library: rotation, translation, ortho projection       |
+| `inputHandler.py` | Mouse input: drag-to-rotate, clickdisambiguation(drag vs tap) |
 
 ---
 
