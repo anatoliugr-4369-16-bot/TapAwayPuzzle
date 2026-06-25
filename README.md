@@ -82,12 +82,12 @@ python main.py
 - [x] No external assets
 
 ### GROUP-MEMBER
-1.Asanti Oluma ugr/8165/16
-2.Anatoli chala ugr/4369/16
-3.Ebise Tekle ugr/9482/16
-4.Mufarihat Tadese ugr/9735/16
-5.Marta Tegegn ugr/4457/16
-6.Selamawit Mulat ugr/1033/16
-7.Solomon waganeh UGR/0092/18
+- Asanti Oluma ugr/8165/16
+- Anatoli chala ugr/4369/16
+- Ebise Tekle ugr/9482/16
+- Mufarihat Tadese ugr/9735/16
+- Marta Tegegn ugr/4457/16
+- Selamawit Mulat ugr/1033/16
+- Solomon waganeh UGR/0092/18
 
 
