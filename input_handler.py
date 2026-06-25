@@ -8,7 +8,6 @@ import pygame
 
 ROTATION_SENSITIVITY = 0.4
 
-
 class InputHandler:
     def __init__(self):
         self._dragging   = False
