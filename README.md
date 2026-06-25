@@ -1,4 +1,4 @@
-# Tap Away — Orthographic Puzzle Game (Revised)
+# Tap Away — Orthographic Puzzle Game 
 
 ## Overview
 
@@ -80,3 +80,14 @@ python main.py
 - [x] Blocked flash (red outline + face tint)
 - [x] Large puzzle: 98 / 152 / 218 outer cubes for 5/6/7 sizes
 - [x] No external assets
+
+### GROUP-MEMBER
+1.Asanti Oluma ugr/8165/16
+2.Anatoli chala ugr/4369/16
+3.Ebise Tekle ugr/9482/16
+4.Mufarihat Tadese ugr/9735/16
+5.Marta Tegegn ugr/4457/16
+6.Selamawit Mulat ugr/1033/16
+7.Solomon waganeh UGR/0092/18
+
+
