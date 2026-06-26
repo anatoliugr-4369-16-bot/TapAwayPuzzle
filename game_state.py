@@ -20,3 +20,23 @@ class GameState:
         self.score        = 0
         self.puzzle_size  = 5
         self.taps         = 0
+# ── Puzzle management ───────────────────────────────────────────
+
+    def start_puzzle(self, size: int = 5):
+        self.puzzle_size = size
+        self.state       = 'playing'
+        self.score       = 0
+        self.taps        = 0
+        self.grid.generate(size=size)
+
+    def restart(self):
+        """
+        Restore the EXACT same puzzle (same arrows, same layout).
+        Does NOT re-randomise — proper restart like the real game.
+        """
+        self.state  = 'playing'
+        self.score  = 0
+        self.taps   = 0
+        self.grid.restart()
+
+    
