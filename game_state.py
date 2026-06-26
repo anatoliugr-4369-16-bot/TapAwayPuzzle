@@ -39,4 +39,10 @@ class GameState:
         self.taps   = 0
         self.grid.restart()
 
-    
+    def shuffle(self):
+        """Reassign arrows to break a stuck state (costs 50 pts)."""
+        if self.state not in ('playing', 'stuck'):
+            return
+        self.grid.shuffle_directions()
+        self.score = max(0, self.score - 50)
+        self.state = 'playing'
