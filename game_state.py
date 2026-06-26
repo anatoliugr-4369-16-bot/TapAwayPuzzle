@@ -83,4 +83,13 @@ class GameState:
             self.state  = 'won'
             self.score += 200
         elif self.grid.is_stuck():
-            self.state  = 'stuck'    
+            self.state  = 'stuck'
+    # ── Properties ──────────────────────────────────────────────────
+
+    @property
+    def is_won(self):
+        return self.state == 'won'
+
+    @property
+    def is_stuck(self):
+        return self.state == 'stuck'            
