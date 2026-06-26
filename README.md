@@ -86,7 +86,7 @@ python main.py
 - Anatoli chala ugr/4369/16
 - Ebise Tekle ugr/9482/16
 - Mufarihat Tadese ugr/9735/16
-- Marta Tegegn ugr/4457/16
+- Marta Tegegne ugr/4457/16
 - Selamawit Mulat ugr/1033/16
 - Solomon waganeh UGR/0092/18
 
