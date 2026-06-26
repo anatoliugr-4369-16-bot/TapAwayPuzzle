@@ -46,3 +46,24 @@ class GameState:
         self.grid.shuffle_directions()
         self.score = max(0, self.score - 50)
         self.state = 'playing'
+    # ── Tap ──
+
+    def try_tap(self, cube: Cube) -> bool:
+        """
+        Attempt to launch cube.
+        Returns True on success (path was clear), False if blocked.
+        Blocked cubes get a red flash; no other state change.
+        """
+        if self.state != 'playing':
+            return False
+        if cube.is_animating or cube.is_removed:
+            return False
+
+        if self.grid.is_path_clear(cube):
+            self.grid.launch_cube(cube)
+            self.taps  += 1
+            self.score += 10
+            return True
+        else:
+            cube.blocked_timer = 0.55   # red flash duration (seconds)
+            return False    
