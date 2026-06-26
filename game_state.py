@@ -67,3 +67,20 @@ class GameState:
         else:
             cube.blocked_timer = 0.55   # red flash duration (seconds)
             return False    
+    # ── Per-frame update ─────────────────────────────────────────────
+
+    def update(self, dt: float):
+        if self.state != 'playing':
+            return
+
+        self.grid.update(dt)
+
+        # Only evaluate end-conditions when nothing is flying
+        if self.grid.in_flight_count() > 0:
+            return
+
+        if self.grid.active_count() == 0:
+            self.state  = 'won'
+            self.score += 200
+        elif self.grid.is_stuck():
+            self.state  = 'stuck'    
