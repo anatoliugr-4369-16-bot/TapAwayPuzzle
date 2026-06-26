@@ -20,7 +20,7 @@ class GameState:
         self.score        = 0
         self.puzzle_size  = 5
         self.taps         = 0
-# ── Puzzle management ───────────────────────────────────────────
+    # ── Puzzle management ───────────────────────────────────────────
 
     def start_puzzle(self, size: int = 5):
         self.puzzle_size = size
