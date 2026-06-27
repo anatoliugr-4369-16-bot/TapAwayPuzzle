@@ -1,3 +1,12 @@
+"""
+cube.py  —  Cube entity.
+
+grid_key  : (int,int,int)  0-based grid index — fixed, never changes.
+anim_offset : world-space displacement added during fly-away animation.
+The Renderer converts grid_key => world position at draw time.
+"""
+
+
 import numpy as np
 from transform import direction_vector
 
